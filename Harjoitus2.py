@@ -32,7 +32,7 @@ class Opiskelija:
             return self.kokonais_arvosana
         else:
             self.kokonais_arvosana = (1 + self.harjoitusarvosana + self.tenttiarvosana) / 3
-            return self.kokonais_arvosana
+            return round(self.kokonais_arvosana,2)
 
 
 kurssilainen1 = Opiskelija("Johan Kämp", "212233", 3, 5)
